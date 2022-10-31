@@ -46,21 +46,22 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="50dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/Name_text"
+                android:layout_margin="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+                android:hint="Masukkan username Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -76,18 +77,19 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/Email_text"
+                android:layout_margin="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan email Anda"
+                android:hint="Masukkan email Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -103,18 +105,20 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:id="@+id/EtPass"
+                android:layout_margin="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+                android:hint="Masukkan password Anda"
+                android:inputType="textPassword"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -130,11 +134,12 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <TextView
-                android:layout_margin="10dp"
+            <EditText
+                android:layout_margin="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan lagi password Anda"
+                android:hint="Masukkan lagi password Anda"
+                android:inputType="textPassword"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -145,17 +150,19 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="32dp"
+        app:cardCornerRadius="40dp"
         android:backgroundTint="@color/pink"
         app:layout_constraintTop_toBottomOf="@id/inputList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp">
 
-        <TextView
+        <Button
+            android:id="@+id/ToProPic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
+            android:background="@color/cardview_shadow_end_color"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
             android:textSize="12pt"
@@ -167,7 +174,8 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
+    <Button
+        android:id="@+id/ToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"

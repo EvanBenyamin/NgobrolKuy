@@ -7,43 +7,33 @@
     android:background="@drawable/gradient_drawable"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/ngobrolIcon"
-        android:layout_width="300px"
-        android:layout_height="300px"
-        android:src="@drawable/ngobrolkuy_icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"/>
-
     <LinearLayout
         android:id="@+id/ngobrolKuyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ngobrolIcon"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        tools:layout_editor_absoluteY="30dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ngobrol"
-            android:textSize="16pt"
             android:fontFamily="@font/redhatdisplay_regular"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:text="Pulihkan"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Kuy"
-            android:textSize="16pt"
             android:fontFamily="@font/redhatdisplay_regular"
-            android:textStyle="bold"
-            android:textColor="@color/pink"/>
+            android:text="Password"
+            android:textColor="@color/pink"
+            android:textSize="16pt"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -63,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Username"
+            android:text="Email"
             android:textSize="12pt"
             android:fontFamily="@font/redhatdisplay_regular"
             android:textStyle="bold"
@@ -79,22 +69,12 @@
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Masukkan username Anda"
+                android:hint="Masukkan Email Anda"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_marginTop="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="Password"
-            android:textSize="12pt"
-            android:fontFamily="@font/redhatdisplay_regular"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -102,26 +82,11 @@
             app:cardCornerRadius="40dp"
             android:backgroundTint="@color/white">
 
-            <EditText
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Masukkan password Anda"
-                android:inputType="textPassword"
-                android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/ForgotPass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Lupa password?"
-            android:fontFamily="@font/redhatdisplay_regular"
-            android:textColor="@color/white"
-            android:textSize="8pt"/>
+
 
     </LinearLayout>
 
@@ -136,7 +101,7 @@
         android:layout_marginTop="32dp">
 
         <Button
-            android:id="@+id/Login"
+            android:id="@+id/Submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
@@ -145,28 +110,12 @@
             android:layout_marginBottom="8dp"
             android:background="@color/cardview_shadow_end_color"
             android:fontFamily="@font/redhatdisplay_regular"
-            android:text="LOGIN"
+            android:text="Submit"
             android:textColor="@color/white"
             android:textSize="12pt"
             android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/ToRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rounded_outline"
-        android:fontFamily="@font/redhatdisplay_regular"
-        android:text="Belum punya akun?"
-        android:textColor="@color/white"
-        android:textSize="12pt"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
